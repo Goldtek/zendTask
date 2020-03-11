@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "712865013886",
+    "firebase_url": "https://zendtask.firebaseio.com",
+    "project_id": "zendtask",
+    "storage_bucket": "zendtask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712865013886:android:6779f1c40edea55d25382f",
+        "android_client_info": {
+          "package_name": "com.zendtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712865013886-g5fi0tekn95fm4afefalelmbjo1t6f69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVnGcWk472jSjLODyjZo8tb4ZYI-MbS1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712865013886-g5fi0tekn95fm4afefalelmbjo1t6f69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
