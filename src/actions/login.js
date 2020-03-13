@@ -8,6 +8,7 @@ export const errorMessage = (message) => ({ type: STORE_USER_ERROR_MSG, message 
 
 export const register = (email, password, fullname) => async (dispatch) => {
   try {
+    // therefore convert lat-log to zipcode during registration
     const navigation = useNavigation();
     const user = await auth().createUserWithEmailAndPassword(email, password);
     await auth().currentUser.updateProfile({
@@ -35,7 +36,3 @@ export const loginUser = (userData) => async (dispatch) => {
     dispatch(errorMessage(error.message));
   }
 };
-
-//fetch all user 
-
-//store error message

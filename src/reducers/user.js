@@ -1,12 +1,13 @@
 import {
-  FETCH_USER, LOGIN_SUCCESS, LOG_OUT, STORE_USER_ERROR_MSG,
+  FETCH_USER, LOGIN_SUCCESS, LOG_OUT, STORE_USER_ERROR_MSG, REGION_CHANGED, STORE_FRIENDS,
 } from '../actions/action-types';
 
 const initialState = {
   user: {},
   loading: true,
   errorMessage: '',
-
+  artisians: [],
+  friends: [],
 };
 
 const UserReducer = (state = initialState, action) => {
@@ -27,6 +28,18 @@ const UserReducer = (state = initialState, action) => {
       return {
         ...state,
         errorMessage: action.message,
+      };
+
+    case REGION_CHANGED:
+      return {
+        ...state,
+        artisians: action.users,
+      };
+
+    case STORE_FRIENDS:
+      return {
+        ...state,
+        friends: action.friends
       };
     case LOG_OUT:
       return {

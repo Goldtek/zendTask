@@ -5,3 +5,6 @@ export const LOGIN_FAILURE = 'LOGIN_FAILURE';
 export const LOG_OUT = 'LOG_OUT';
 export const CREATE_USER = 'CREATE_USER';
 export const STORE_USER_ERROR_MSG = 'USER_ERROR_MESSAGE';
+export const REGION_CHANGED = 'REGION_CHANGED';
+export const ARTISIAN = 'ARTISIAN';
+export const STORE_FRIENDS = 'STORE_FRIENDS';

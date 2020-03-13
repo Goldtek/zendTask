@@ -3,11 +3,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import Profile from '../screens/profile';
-import Login from '../screens/login';
-import Channel from '../screens/channels';
-import Mapview from '../screens/mapview';
-import { colors } from '../styles';
+import Profile from '../components/screens/profile';
+import Login from '../components/screens/login';
+import Channel from '../components/screens/channels';
+import Mapview from '../components/screens/mapview';
+import { colors } from '../components/styles';
 
 // create screen for signup
 
@@ -80,7 +80,7 @@ export const PublicNavigator = () => (
       component={Profile}
       options={{
         headerStyle: {
-          height: 0, // Specify the height of your custom header
+          height: 0,
         },
       }}
     />
