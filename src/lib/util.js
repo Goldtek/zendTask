@@ -13,3 +13,5 @@ export const uploadImageToFirebase = async (photo, id) => {
   const { downloadURL } = snapshot;
   return downloadURL;
 };
+
+

@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import StarRating from 'react-native-star-rating';
 
 import pp from '../../../assets/images/profile/me.jpg';
 
@@ -19,6 +20,20 @@ const UserInfo = ({ item }) => (
       <Text>{item.primary_skill}</Text>
     </View>
     {/* add rating icons here */}
+    <View style={styles.row}>
+      <StarRating
+        disabled={false}
+        emptyStar="ios-star-outline"
+        fullStar="ios-star"
+        halfStar="ios-star-half"
+        iconSet="Ionicons"
+        maxStars={5}
+        rating={item.rating}
+        starSize={20}
+       // selectedStar={(rating) => this.onStarRatingPress(rating)}
+        fullStarColor="gold"
+      />
+    </View>
     <View style={[styles.row, styles.top, { justifyContent: 'space-between' }]}>
       <TouchableOpacity style={styles.button} activeOpacity={0.7}>
         <Text style={styles.buttonText}> View Profile</Text>

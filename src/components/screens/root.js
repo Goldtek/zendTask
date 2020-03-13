@@ -5,7 +5,7 @@ import auth from '@react-native-firebase/auth';
 
 import Splash from './splash';
 
-import { PublicNavigator, PrivateNavigator } from '../lib/appNavigator';
+import { PublicNavigator, PrivateNavigator } from '../../lib/appNavigator';
 
 // create screen for signup
 // create screen for intro

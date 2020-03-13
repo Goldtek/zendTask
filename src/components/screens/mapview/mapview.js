@@ -30,16 +30,19 @@ constructor(props) {
         name: 'onwuegbuzie chisom dike',
         primary_skill: 'Software enginering',
         id: 1,
+        rating: 4,
       },
       {
         name: 'Abaenowa franca chinansa',
         primary_skill: 'laboratory scientist',
         id: 2,
+        rating: 0,
       },
       {
         name: 'Nwachukwu Evelyn',
         primary_skill: 'Civil Servant',
         id: 3,
+        rating: 2,
       }
 
     ]
@@ -99,6 +102,7 @@ componentWillUnmount() {
                 initialRegion={region}
                 style={{ flex: 1 }}
                 onRegionChange={this.onRegionChangeComplete}
+                showsUserLocation
               />
               <View style={{
                 height: 180, position: 'absolute', bottom: 0, width, marginHorizontal: 10
@@ -108,7 +112,7 @@ componentWillUnmount() {
                 <FlatList
                   data={users}
                   renderItem={({ item }) => (<UserInfo item={item} />)}
-                  keyExtractor={(item) => item.id}
+                  keyExtractor={(item) => item.id.toString()}
                   horizontal
                 />
               </View>
